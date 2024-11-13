@@ -14,4 +14,16 @@ const reverseString = (str) => {
 	return newStr;
 };
 
-console.log(reverseString("hello"));
+console.log("Algorithm #1: ", reverseString("hello"));
+
+function reverseStringAlpha(str) {
+	reversed = "";
+
+	for (const char of str) {
+		reversed = char + reversed;
+	}
+
+	return reversed;
+}
+
+console.log("Algorithm Alpha: ", reverseStringAlpha("mango"));
